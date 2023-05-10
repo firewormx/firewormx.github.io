@@ -5,7 +5,7 @@
 --green: #D0F0C0;
 --brown: #674846;
 --river: #20B2AA;
---nav-height: 15vh;
+--nav-height: 60px;
 }
 body{
   margin: 0;
@@ -52,13 +52,14 @@ background-color:  lightblue;
 }
 #welcome-section{
 display: grid;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 grid-template-rows: 1fr 2fr 1fr;
 place-items: center;
 }
 #About{
   height: 100vh;
+  outline: 1px solid red;
   width: 100vw;
   margin-top: 0;
   display: flex;
@@ -78,9 +79,9 @@ flex-direction: column;
 }
 
 #projects{
- height: 200dvh;
+ height: 400dvh;
   width: 100dvw;
-    margin-top: 0;
+   padding-block: 20px;
    background-color: var(--green);
    display: flex;
   flex-direction: column;
@@ -110,21 +111,30 @@ justify-content: center;
   height: 2px;
 
 }
+.projects-details > *{
+  outline: 1px solid blue;
+}
 .projects-details{
-  height: 100%;
-  width: 100%;
+  outline: 1px solid red;
+  height: 80%;
+  width:100%;
   margin-top: 20px;
   padding-inline: 50px;
   display: grid; 
-  grid-template-columns:repeat(2,minmax(0, 1fr));
+  grid-template-columns:repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 place-items: center;
-  grid-template-areas: "survey JS"
-  "Tribute Product";
+  grid-template-areas:
+    "survey JS Cat Tribute Product"
+  "Rothco  Registration 8 9 10"
+    "11 12 13 14 15"
+    "16 17 18 19 20";
+  gap: 20px;
 }
 
 .part {
-  height: 100%;
-  width: 60%; 
+  height: 60%;
+  width: 100%; 
   padding: 0;
   margin: 0;
   opacity: 0.85;
@@ -151,11 +161,11 @@ text-decoration: none;
 }
 
 .part h3{
-  height: 10%;
+  height: 15%;
   color: white;
  margin-block: 15px;
- margin-top: 0;
-  padding-block: 6px;
+ margin: 0;
+  padding-block: 2px;
   text-align: center;
   font-size: 1.2rem; 
 background-color:var(--river);
@@ -168,7 +178,10 @@ background-color:var(--river);
 .JS-documentation{
   grid-area: JS;
 }
-.Tribute-page{
+.Catphoto{
+  grid-area: Cat;
+}
+.tribute-page{
   grid-area: Tribute;
 }
 .product{

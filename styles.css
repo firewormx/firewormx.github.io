@@ -1,263 +1,282 @@
 *{
-    box-sizing: border-box;
-    
-  }
-  :root{
-  --red: FF0000;
-  --green: D0F0C0;
-  --brown: 674846;
-  --river: 20B2AA;
-  --nav-height: 10vw;
-  }
-  body{
-    margin: 0;
-    font-family: system-ui;
-  background-color: var(--brown);
-    color: white;
-  }
-  main{
-    margin-top: var(--nav-height);
-  }
-  #navbar{
-  width: 100dvw;
-  height: 10%;
+  box-sizing: border-box;
+}
+:root{
+--green: #D0F0C0;
+--brown: #674846;
+--river: #20B2AA;
+--nav-height: 15vh;
+}
+body{
   margin: 0;
-  background-color: 20B2AA;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  }
-  .nav-details li{
-    list-style: none;
-  }
-  li a{
-  text-decoration: none;
-  color:white;
-  font-size: 1.4rem;
-  font-weight: 600;
-  font-style: oblique 12deg;
-  padding: 20px;
-  }
-  
-  .nav-details{
-    display: flex;
-    gap: 30px;
-    justify-content: flex-end;
-  padding: 5px;
-  transition: background-color 200ms;
-  }
-  .nav-details li  a:hover{
-  background-color:  lightblue;
-  }
-  #welcome-section{
-  display: gird;
-  grid-template-rows: 1fr 1fr 1fr;
-  place-items: center;
-  }
-  #About{
-    height: 100vh;
-    width: 100vw;
-    margin-top: 65px;
-    display: flex;
-  flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  #About h1{
-    font-size: 3.5rem;
-    margin-bottom: 0;
-  }
-  #About p{
-    font-size: 1.5rem;
-    color:lightblue;
-  }
-  
-  #projects{
-    margin-block: 10px;
-    height:200dvh;
-    width: 100vw;
-     background-color: var(--green);
-     display: flex;
-     flex-direction: column;
-     gap: 0px;
-     position: relative;
-  }
-  #projects h2{
-  outline: 1px solid transparent;
-  color:40826D;
-  margin-inline: auto;
-  font-size: 2.3rem;
-  margin-bottom:0;
-  padding-bottom: 0;
-  text-shadow: 1px 1px 1px white;
-  }
-  .project-title{
-    height: 10%;
-    display: flex;
-  flex-direction: column;
-    gap: 1px;
-  justify-content: center;
-    align-items: center;
-  }
-  .line{
-    width: 500;
-    background-color: 674846;
-    height: 2px;
-  
-  }
-  .projects-details{
-    height: 80%;
-  margin-inline: 50px;
-  margin-bottom: 10px;
-    display: grid; grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "survey JS"
-    "Tribute Product";
-  place-items: center;
-  gap: 30px;
-  }
-  
-  .part{
-    height: 90%;
-    width: 100%; 
-    padding: 0;
-    opacity: 0.85;
-    transition: opacity 200ms;
-  }
-  
-  a{
-  text-decoration: none;
-  }
-  
-  .part:hover{
-    cursor: pointer;
-    opacity: 1;
-  }
-  
-  .part h3{
-    height: 10%;
-    color:white;
-   margin-block: 0;
-   padding: 5px;
-    text-align: center;
-    font-size: 1.2rem; 
-  background-color:var(--river);
-  }
-  .survey-form{
-    grid: survey;
-  }
-  .JS-documentation{
-    grid-area: JS;
-  }
-  .Tribute-page{
-    grid-area: Tribute;
-  }
-  .product{
-    grid-area: Product;
-  }
-  .button{
-  height: 10%;
-  margin-inline: auto;
-  
-  }
-  .show-all{
-  background-color:var(--river);
+  font-family: system-ui;
+background-color: var(--brown);
   color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 12px;
+}
+
+main{
+  margin-top: var(--nav-height);
+}
+
+#navbar{
+width: 100dvw;
+height: var(--nav-height);
+margin: 0;
+background-color: #20B2AA;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+.nav-details li{
+  list-style: none;
+}
+li a{
+text-decoration: none;
+color:white;
+font-size: 1.4rem;
+font-weight: 600;
+font-style: oblique 12deg;
+padding: 20px;
+}
+
+.nav-details{
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+padding: 5px;
+transition: background-color 200ms;
+}
+.nav-details li  a:hover{
+background-color:  lightblue;
+}
+#welcome-section{
+display: grid;
+  height: 100vh;
+  width: 100vw;
+grid-template-rows: 1fr 2fr 1fr;
+place-items: center;
+}
+#About{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0;
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#About h1{
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+#About p{
+  font-size: 1.5rem;
+  color:lightblue;
+  margin-top: 0;
+}
+
+#projects{
+ height: 200dvh;
+  width: 100dvw;
+    margin-top: 0;
+   background-color: var(--green);
+   display: flex;
+  flex-direction: column;
+   gap: 10px;
+   position: relative;
   
-  }
-  .show-all:hover{
-  background-color:007A74;
-    color: white;
-  }
-  
-  #contact{
-    height: 100vh;
-    width: 100vw;
-    padding: 10px;
+}
+#projects h2{
+outline: 1px solid transparent;
+color:#40826D;
+margin-inline: auto;
+font-size: 2.3rem;
+margin-bottom:0;
+  margin-top: 20px;
+padding-bottom: 0;
+text-shadow: 1px 1px 1px white;
+}
+.project-title{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+  align-items: center;
+}
+.line{
+  width: 500px;
+  background-color: #674846;
+  height: 2px;
+
+}
+.projects-details{
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding-inline: 50px;
+  display: grid; 
+  grid-template-columns:repeat(2,minmax(0, 1fr));
+place-items: center;
+  grid-template-areas: "survey JS"
+  "Tribute Product";
+}
+
+.part {
+  height: 100%;
+  width: 60%; 
+  padding: 0;
+  margin: 0;
+  opacity: 0.85;
+  transition: opacity 200ms;
+}
+.project-tile{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  .work-details{
-    text-align: center;
-  }
-  #contact h2{
-    font-size: 3.5rem;
-    margin-bottom: 0;
-  }
-  #contact h4{
-    font-size: 1.2rem;
-    color: lightblue;
-    margin-top: 10px;
-  }
-  .logos{ 
-    width: 95%;
-    padding:0;
-  }
-  .logo{
-    display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0;
-  margin:0;
-  
-  }
-  .logo li {
-    list-style: none;
-  margin-inline: auto; 
-  margin-top: 10px;
-  transition: translate 200ms;
-  }
-  .logo li:hover{
-  translate: 0px 5px;
-  
-  }
-  
-  .fa{
-  display: inline-block;
-  }
-  .link{
-    padding: 0px;
-    display: flex; justify-content: center;
-    gap: 10px;
-  }
-  .link p{
-    font-size: 1.3rem;
-  
-    margin-top: 10px;
-  }
-  footer{
-    height: 15%;
-    width: 100vw;
-  }
-  .border-line{
-   width: 100vw;
-    background-color: var(--river);
-    height: 3px;
-    border: none;
-  }
-  .footer-details{width: 100%;
-  padding: 20px;
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  }
-  .copyright{
+  gap: 0;
+  height: 100%;
+}
+}
+img{
+  height: auto;
+  max-width: 100%;
+}
+a{
+text-decoration: none;
+}
+
+.part:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.part h3{
+  height: 10%;
   color: white;
-  }
-  @media(max-width: 37.5rem){
-  #navbar,
-  logo{
-    flex-direction: column;
-  }
-  
-  }
+ margin-block: 15px;
+ margin-top: 0;
+  padding-block: 6px;
+  text-align: center;
+  font-size: 1.2rem; 
+background-color:var(--river);
+}
+
+.survey-form{
+  grid-area: survey;
+
+}
+.JS-documentation{
+  grid-area: JS;
+}
+.Tribute-page{
+  grid-area: Tribute;
+}
+.product{
+  grid-area: Product;
+}
+.button{
+height: 10%;
+margin-inline: auto;
+
+}
+.show-all{
+background-color:var(--river);
+color: white;
+font-size: 1.2rem;
+font-weight: 600;
+border: none;
+padding: 10px 25px;
+border-radius: 12px;
+
+}
+.show-all:hover{
+background-color:#007A74;
+  color: white;
+}
+
+#contact{
+  height: 100vh;
+  width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.work-details{
+  text-align: center;
+  margin-top: var(--nav-height);
+}
+#contact h2{
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+#contact h4{
+  font-size: 1.2rem;
+  color: lightblue;
+  margin-top: 10px;
+}
+.logos{ 
+  width: 95%;
+  height: 200%;
+  padding:0;
+  margin: 40px;
+}
+.logo{
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 0;
+margin:0;
+
+}
+.logo li {
+  list-style: none;
+margin-inline: auto; 
+margin-top: 10px;
+transition: translate 200ms;
+}
+.logo li:hover{
+translate: 0px 5px;
+
+}
+
+.fa{
+display: inline-block;
+}
+.link{
+  padding: 0px;
+  display: flex; justify-content: center;
+  gap: 10px;
+}
+.link p{
+  font-size: 1.3rem;
+
+  margin-top: 10px;
+}
+
+.border-line{
+ width: 100vw;
+  background-color: var(--river);
+  height: 3px;
+  border: none;
+}
+.footer-details{
+  width: 100%;
+  margin-block: 20px;
+padding-inline: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+}
+
+.copyright{
+color: white;
+}
+@media(max-width: 37.5rem){
+#navbar,
+logo{
+  flex-direction: column;
+}
+
+}

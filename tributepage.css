@@ -1,12 +1,9 @@
-img{max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;}
 
 body{
     background-color: rgba(0 0 0/ 10%);
    font-family: sans-serif;
 }
+
 .title{
  font-size: 1.12rem;
   padding: 30px;
@@ -21,10 +18,16 @@ body{
   display: flex;
   flex-direction: column;
   background-color: white;
-  align-items: center;
-  justify-content: center;
   gap: 5px;
 }
+ 
+ 
+ #image{
+  max-width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    }
 
 #img-caption{
   margin: 20px;
@@ -38,15 +41,14 @@ body{
 }
 .details{
   margin-inline: auto;
-  width: 40vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-blockquote{
-  margin-left: -10px;
-}
-h3{
+
+.footer-p{
   text-align: center;
   margin: 30px;
+  font-weight: 600;
 }

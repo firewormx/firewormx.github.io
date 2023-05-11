@@ -15,7 +15,7 @@ background-color: var(--brown);
 }
 
 main{
-  margin-top: var(--nav-height);
+  margin-top: 0;
 }
 
 #navbar{
@@ -90,7 +90,6 @@ flex-direction: column;
   
 }
 #projects h2{
-outline: 1px solid transparent;
 color:#40826D;
 margin-inline: auto;
 font-size: 2.3rem;
@@ -244,7 +243,6 @@ display: inline-block;
 }
 .link p{
   font-size: 1.3rem;
-
   margin-top: 10px;
 }
 
@@ -261,12 +259,12 @@ padding-inline: 20px;
 display: flex;
 justify-content: space-between;
 align-items: center;
- 
 }
 
 .copyright{
 color: white;
 }
+
 @media(max-width: 37.5rem){
 #navbar,
 logo{

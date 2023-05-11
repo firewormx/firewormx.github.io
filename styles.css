@@ -61,14 +61,12 @@ place-items: center;
 }
 #About{
   height: 100vh;
-  outline: 1px solid red;
   width: 100vw;
   margin-top: 0;
   display: flex;
 flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 #About h1{
   font-size: 3.5rem;
@@ -113,11 +111,7 @@ justify-content: center;
   height: 2px;
 
 }
-.projects-details > *{
-  outline: 1px solid blue;
-}
 .projects-details{
-  outline: 1px solid red;
   height: 85%;
   width: 100%;
   padding-inline: 100px;
@@ -127,10 +121,10 @@ justify-content: center;
   grid-template-rows: repeat(4, minmax(0, 1fr));
 place-items: center;
   grid-template-areas:
-    "survey JS Cat Tribute Product"
-  "Rothco  Registration 8 9 10"
-    "11 12 13 14 15"
-    "16 17 18 19 20";
+  "survey JS Cat Tribute Product"
+  "Rothco  Registration Cafe markers gallery"
+    "quiz balance nutrition picasso piano"
+    "skyline magazine ferris penguin portfolio";
   gap: 20px;
 }
 
@@ -172,22 +166,6 @@ img{
 background-color:var(--river);
 }
 
-.survey-form{
-  grid-area: survey;
-
-}
-.JS-documentation{
-  grid-area: JS;
-}
-.Catphoto{
-  grid-area: Cat;
-}
-.tribute-page{
-  grid-area: Tribute;
-}
-.product{
-  grid-area: Product;
-}
 .button{
 height: 10%;
 margin-inline: auto;

@@ -27,6 +27,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
+ z-index: 2;
 }
 .nav-details li{
   list-style: none;
@@ -79,7 +80,7 @@ flex-direction: column;
 }
 
 #projects{
- height: 400dvh;
+ height: 200dvh;
   width: 100dvw;
    padding-block: 20px;
    background-color: var(--green);
@@ -95,7 +96,7 @@ color:#40826D;
 margin-inline: auto;
 font-size: 2.3rem;
 margin-bottom:0;
-  margin-top: 20px;
+  margin-top: 70px;
 padding-bottom: 0;
 text-shadow: 1px 1px 1px white;
 }
@@ -118,8 +119,8 @@ justify-content: center;
   outline: 1px solid red;
   height: 80%;
   width:100%;
-  margin-top: 20px;
-  padding-inline: 50px;
+  margin-block: 25px;
+  padding-inline: 100px;
   display: grid; 
   grid-template-columns:repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -135,7 +136,7 @@ place-items: center;
 .part {
   height: 60%;
   width: 100%; 
-  padding: 0;
+  padding: 10px;
   margin: 0;
   opacity: 0.85;
   transition: opacity 200ms;
@@ -144,7 +145,7 @@ place-items: center;
   display: flex;
   flex-direction: column;
   gap: 0;
-  height: 100%;
+  height: 80%;
 }
 }
 img{
@@ -161,9 +162,7 @@ text-decoration: none;
 }
 
 .part h3{
-  height: 15%;
   color: white;
- margin-block: 15px;
  margin: 0;
   padding-block: 2px;
   text-align: center;

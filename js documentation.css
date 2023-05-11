@@ -1,0 +1,127 @@
+*{
+    font-family: sans-serif;
+  }
+  #main-doc{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
+  min-width: 400px;
+  position: relative;
+  }
+  
+  #navbar{
+  position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    width: 30%;
+  flex-direction: column;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.6);
+    }
+  
+  #navbar header{
+  font-size: 1.6rem;
+  font-weight: 450;
+  text-align: center;
+  margin-top: 3px;
+  padding-bottom: 5px;
+  }
+  
+  .links{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 5px;
+  height: 100dvh;
+  margin-bottom: 10px;
+  }
+  
+  .nav-link{
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 22, 22, 0.4);
+  padding-left: 10px;
+  padding-block: 10px;
+  color: rgba(0, 22, 22, 0.8);
+  text-align: left;
+  }
+  .links header{
+    border-bottom: 1px solid rgba(0, 22, 22, 0.4);
+  }
+  .links li:last-child a{
+    border-bottom: none;
+  }
+  
+  #section{
+  width: 70%;
+  }
+  
+  .main-section{
+  padding-inline: 30px;
+  padding-top: 10px;
+  margin-top: 0;
+  }
+  
+  .main-section header{
+  margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: thin;}
+  
+  p{text-align: left;
+    margin-left: 15px;
+    
+   }
+   .details{
+     display: flex;
+  flex-direction:column;
+  gap: 25px;
+   }
+  
+  section li{
+  margin-left: 20px;
+  }
+  .item-background{
+    display: block;
+  background-color:rgba(0 0 0 /6%);
+  height: max(45px, 10dvh);
+  border-radius: 12px;
+  margin-inline: 10px;
+  padding-top: 10px;
+  position: relative;
+  
+  }
+  .item-background p{
+    font-size: 0.8rem;
+    padding-block: auto;
+  }
+  .data_types{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-inline: 20px;
+    margin-block: 15px;
+  }
+  .data_types li{
+    list-style-type: disc;
+  }
+  #sixdata_types li{
+  margin-block:  10px;
+    list-style-type: circle;
+  }
+  
+  .list-styles{
+    list-style: disc;
+  }
+  
+  @media (max-width:37.5rem) {
+     section ul li {
+      list-style-type: none;
+    }
+    
+  }

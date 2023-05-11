@@ -50,7 +50,7 @@ transition: background-color 200ms;
 }
 .nav-details li  a:hover{
 background-color:  lightblue;
-height: var(--nav-height);
+ height: var(--nav-height);
 }
 #welcome-section{
 display: grid;
@@ -97,7 +97,6 @@ color:#40826D;
 margin-inline: auto;
 font-size: 2.3rem;
 margin-bottom:0;
-  margin-top: 70px;
 padding-bottom: 0;
 text-shadow: 1px 1px 1px white;
 }
@@ -106,6 +105,7 @@ text-shadow: 1px 1px 1px white;
 flex-direction: column;
 justify-content: center;
   align-items: center;
+    margin-block: 30px;
 }
 .line{
   width: 550px;
@@ -118,10 +118,10 @@ justify-content: center;
 }
 .projects-details{
   outline: 1px solid red;
-  height: 80%;
-  width:100%;
-  margin-block: 25px;
+  height: 85%;
+  width: 100%;
   padding-inline: 100px;
+  padding-bottom: 50px;
   display: grid; 
   grid-template-columns:repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -135,7 +135,7 @@ place-items: center;
 }
 
 .part {
-  height: 60%;
+  height: 100%;
   width: 100%; 
   padding: 10px;
   margin: 0;
@@ -146,15 +146,13 @@ place-items: center;
   display: flex;
   flex-direction: column;
   gap: 0;
-  height: 80%;
+  height: 100%;
+  text-decoration: none;
 }
-
+}
 img{
-  height: auto;
+  height: 80%;
   max-width: 100%;
-}
-a{
-text-decoration: none;
 }
 
 .part:hover{

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+  background-image: linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );
+  
+  margin: 0;}
+  
+  .container{
+    height: 100%;
+    width: 100%;
+  }
+  
+  h1,p{text-align: center;
+       margin: 1em auto;}
+  
+  form {
+    width: 100vw;
+      max-width: 500px;
+      min-width: 500px;
+      margin: 29px auto;
+    padding-bottom: 2em;
+   border: 1px dotted grey;
+    padding-inline: 20px;
+    padding-block: 20px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;}
+  
+  #title{
+    margin-bottom: 0;
+  }
+  #description{
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  #number-label{
+    margin-left: 11px;
+  }
+  .form-group{
+    margin-block: 10px;
+  }
+  #submit{
+    margin: 20px auto;
+    padding: 4px;
+  }

@@ -149,7 +149,7 @@ place-items: center;
   height: 100%;
   text-decoration: none;
 }
-}
+
 img{
   height: 80%;
   max-width: 100%;
@@ -201,13 +201,15 @@ font-weight: 600;
 border: none;
 padding: 10px 25px;
 border-radius: 12px;
-
+transition: translate 200ms;
 }
 .show-all:hover{
 background-color:#007A74;
   color: white;
 }
-
+.show-all:active{
+  translate: 1px 2px;
+}
 #contact{
   height: 100vh;
   width: 100vw;

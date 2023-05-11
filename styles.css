@@ -5,7 +5,7 @@
 --green: #D0F0C0;
 --brown: #674846;
 --river: #20B2AA;
---nav-height: 60px;
+--nav-height: 67px;
 }
 body{
   margin: 0;
@@ -50,6 +50,7 @@ transition: background-color 200ms;
 }
 .nav-details li  a:hover{
 background-color:  lightblue;
+height: var(--nav-height);
 }
 #welcome-section{
 display: grid;
@@ -107,7 +108,7 @@ justify-content: center;
   align-items: center;
 }
 .line{
-  width: 500px;
+  width: 550px;
   background-color: #674846;
   height: 2px;
 

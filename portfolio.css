@@ -1,0 +1,462 @@
+@import "components/_base.css";
+@import "components/_defaults.css";
+@import "components/helpers.css";
+@import "components/container.css";
+@import "components/typography.css";
+@import "components/layouts.css";
+@import "components/buttons.css";
+@import "components/tags.css";
+@import "components/nav.css";
+@import "components/portfolio.css";
+@import "components/forms.css";
+@import "components/footer.css";
+@import "components/scroll-down.css";
+@import "components/toggle-theme.css";
+@import "components/intro.css";
+@import "components/hire.css";
+.btn {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: translate 180ms, opacity 180ms;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    translate: 1px, 1px;
+}
+
+.btn--nav {
+    color: var(--text-color);
+    padding: 12px;
+}
+
+.btn--raised {
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 12px 53px 12px 24px;
+    background-image: url("assets/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+.btn--line {
+    color: var(--text-color);
+    padding: 12px;
+}
+
+.btn--line::after {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid var(--primary);
+    height: 4px;
+    width: 100%;
+}
+:root {
+    --primary: #f2d544;
+    --dark-blue: #130c24;
+    --black: #232020;
+    --gray: #999999;
+    --beige: #f5f5f1;
+    --gap: 80px;
+
+    /* theme dependent variables */
+    --text-color: white;
+    --light-icon: white;
+    --gray-dark: #666666;
+    --gray-light: #bdbdbd;
+    --dark-icon: var(--black);
+    --anchor-color: var(--primary);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+}
+
+html.light-theme {
+    background-color: var(--beige);
+    --text-color: var(--black);
+    --gray-light: var(--gray-dark);
+    --light-icon: var(--black);
+    --dark-icon: white;
+    --anchor-color: var(--black);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+@media (max-width: 37.5rem) {
+    :root {
+        --gap: 30px;
+    }
+    html {
+        font-size: 70%; /* as long as the smallest font is still legible */
+    }
+}
+
+a {
+    color: var(--anchor-color);
+    opacity: 0.85;
+    transition: opacity 200ms;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+p {
+    color: var(--gray-light);
+}
+
+strong {
+    font-weight: inherit;
+}
+
+figure,
+blockquote {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-name {
+    margin-bottom: 0;
+}
+.footer-rights {
+    margin-top: 0;
+}
+
+@media (max-width: 37.5rem) {
+    .footer {
+        flex-direction: column;
+    }
+}
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--gray);
+    padding: 12px 10px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    color: var(--text-color);
+    margin-bottom: 24px;
+    transition: border-color 200ms;
+}
+
+.input:focus {
+    border-bottom-color: var(--primary);
+    outline: none;
+}
+
+textarea.input {
+    resize: vertical;
+    min-height: 100px;
+}
+.sr-only,
+.sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.hire-form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: var(--gap);
+}
+
+.hire-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hire-line {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.hire-line p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 37.5rem) {
+    .hire-form {
+        grid-template-columns: 1fr;
+    }
+}
+#intro {
+    position: relative; /* for scroll-down */
+}
+
+#intro-h1 {
+    margin-bottom: 0;
+}
+#intro-h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    overflow-wrap: break-word;
+}
+
+#intro p {
+    margin-block: 0;
+}
+.layout-section {
+    padding-bottom: 200px;
+    scroll-margin-top: 20px;
+}
+
+.layout-section-title {
+    margin-bottom: 36px;
+}
+
+.layout-grid-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+
+@media (max-width: 37.5rem) {
+    .layout-section {
+        padding-bottom: 100px;
+    }
+    .layout-grid-half {
+        grid-template-columns: 1fr;
+    }
+}
+.nav {
+    padding-block: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 48.5rem) {
+    .nav-links li:not(:last-child) {
+        display: none;
+    }
+}
+.portfolio {
+    display: flex;
+    gap: var(--gap);
+    margin-bottom: 100px;
+}
+
+.portfolio-screenshot {
+    border-radius: 50%;
+    width: clamp(175px, 20vw, 300px);
+    height: clamp(175px, 20vw, 300px);
+}
+
+.portfolio:nth-child(odd) .portfolio-screenshot {
+    order: 1;
+}
+
+@media (max-width: 37.5rem) {
+    .portfolio {
+        display: block;
+    }
+}
+#scroll-down {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50vw - 48px / 2);
+    cursor: pointer;
+}
+
+#scroll-down svg {
+    fill: var(--dark-icon);
+    transition: fill 350ms;
+    animation: bounce 1.6s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#scroll-down svg:hover {
+    fill: var(--light-icon);
+}
+
+@keyframes bounce {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -15px;
+    }
+}
+.tags {
+    padding-left: 0;
+}
+
+.tag {
+    --tag-color: var(--gray);
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 1px solid var(--tag-color);
+    padding: 12px 16px;
+    margin: 8px;
+    margin-left: 0;
+    position: relative;
+    outline: 1px solid transparent;
+}
+
+.tag::before {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border: 1px solid var(--tag-color);
+}
+
+.tag:hover {
+    --tag-color: var(--primary);
+    color: var(--primary);
+    outline-color: var(--primary);
+}
+#toggle-theme {
+    all: inherit;
+    outline: revert;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    padding: 5px;
+    transition: translate 180ms;
+}
+#toggle-theme:active {
+    translate: 1px, 1px;
+}
+/* Titles */
+.title--lg {
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 1.05;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.77;
+}
+
+.title--sm {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+/* Texts */
+.text--xl {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.77;
+}
+
+.text--lg {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.text--bold {
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 1.77;
+}
+
+.text {
+    font-size: 1.13rem;
+    font-weight: normal;
+    line-height: 1.77;
+}
+
+.text--sm {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.77;
+}

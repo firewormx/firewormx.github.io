@@ -1,4 +1,4 @@
-import Stats from "classroom/stats.js";
+import Stats from "stats.js";
 
 let gradesForm = document.querySelector("#grades-form");
 let yourGrade = document.querySelector("#your-grade");

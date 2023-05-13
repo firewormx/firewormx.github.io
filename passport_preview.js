@@ -1,4 +1,4 @@
-import Passport from "./passport_class_export.js";
+import Passport from "passport_class_export.js";
 
 let firstName = document.querySelector("#first-name");
 let lastName = document.querySelector("#last-name");

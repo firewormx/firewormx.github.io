@@ -7,7 +7,7 @@
 }
 
 #header .back {
-    background-image: url("/assets/back.svg");
+    background-image: url("public/assets/back.svg");
     background-repeat: no-repeat;
     height: 24px;
     width: 30px;

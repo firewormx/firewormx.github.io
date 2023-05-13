@@ -25,19 +25,19 @@
 }
 
 .action-topup {
-    background-image: url("public/assets/arrow-up.svg");
+    background-image: url("../public/assets/arrow-up.svg");
 }
 
 .action-send {
-    background-image: url("public/assets/arrow-right.svg");
+    background-image: url("../public/assets/arrow-right.svg");
 }
 
 .action-add {
-    background-image: url("public/assets/add.svg");
+    background-image: url("../public/assets/add.svg");
 }
 
 .action-exchange {
-    background-image: url("public/assets/exchange.svg");
+    background-image: url("../public/assets/exchange.svg");
 }
 
 .action-label {

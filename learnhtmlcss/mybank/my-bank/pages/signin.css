@@ -1,5 +1,5 @@
 .recover-password {
-    background-image: url("/assets/lock.svg");
+    background-image: url("public/assets/lock.svg");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 30px;
@@ -7,7 +7,7 @@
 }
 
 .flag-us {
-    background-image: url("/assets/flag-us.svg");
+    background-image: url("public/assets/flag-us.svg");
     background-repeat: no-repeat;
     background-position: center;
 }

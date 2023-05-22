@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the bill</title>
+    <link rel="stylesheet" href="split_bill.css">
+    <script type="module" crossorigin src="index.js"></script>
+  </head>
+
+<nav class="navbar">
+    <h1 class="nav-brand">Split the bill</h1>
+</nav>
+
+<main class="container">
+    <form id="amount-form">
+        <label class="label" for="component-name">Enter amount paid</label>
+        <input type="number" class="input" placeholder="Amount paid" id="amount" autocomplete="off">
+        <input type="submit" class="btn btn-accent" value="Add" />
+    </form>
+
+    <div class="table-container">
+        <h2>Your bill</h2>
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th width="50%">Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</main>
+</html>

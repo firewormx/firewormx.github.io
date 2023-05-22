@@ -115,14 +115,8 @@ justify-content: center;
   padding-bottom: 50px;
   display: grid; 
   grid-template-columns:repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(8, minmax(0, 1fr));
 place-items: center;
-  grid-template-areas:
-    "survey JS Cat Tribute Product 6"
-  "Rothco  Registration Cafe markers gallery 12"
-    "quiz balance nutrition picasso piano 18"
-    "skyline magazine ferris penguin portfolio 24"
-    "25 26 27 28 29 30";
   gap: 20px;
 }
 

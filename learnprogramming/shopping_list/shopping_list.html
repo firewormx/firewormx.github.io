@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping_list</title>
+    <link rel="stylesheet" href="shopping_list.css">
+    <script type="module" crossorigin src="index.js"></script>
+  </head>
+
+<nav class="navbar">
+    <h1 class="nav-brand">Shopping list</h1>
+</nav>
+
+<main class="container">
+    <form id="shopping-list-form">
+        <label class="label" for="component-name">Add item</label>
+        <input type="string" class="input" required placeholder="Item (example: Pasta)" id="item-name">
+        <input type="submit" class="btn btn-default" value="Add" />
+    </form>
+
+        <ul id="shopping-list"></ul>
+        <hr />
+        <strong>Exported CSV</strong>
+        <p id="exported-json"></p>
+    </div>
+</main>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import tasks from CSV</title>
+    <link rel="stylesheet" href="import_csv.css">
+    <script type="module" crossorigin src="index.js"></script>
+  </head>
+
+<nav class="navbar">
+    <h1 class="nav-brand">Import tasks from CSV</h1>
+</nav>
+
+<main class="container">
+    <div>
+        <label class="label" for="component-name">Choose CSV string</label>
+        <select class="select" id="csv-dropdown">
+            <option value="">Choose</option>
+            <option>Wash dishes, Laundry, Plan vacation</option>
+            <option>Turn off lights, Clean bike, Call best friend, Change light bulb</option>
+            <option>Dry hair, Clean kitchen</option>
+        </select>
+    </div>
+
+    <div>
+        <h2>Your tasks</h2>
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th width="200px">Description</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</main>
+</html>

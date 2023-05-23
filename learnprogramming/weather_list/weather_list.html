@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather cities list</title>
+    <link rel="stylesheet" href="weather_list.css">
+    <script type="module" crossorigin src="index.js"></script>
+  </head>
+
+<nav class="navbar">
+    <h1 class="nav-brand">Weather cities list</h1>
+</nav>
+
+<main>
+    <button id="show-first" class="btn btn-outline">Show weather <small>(first location)</small></button>
+    <button id="show-last" class="btn btn-outline">Show weather <small>(last location)</small></button>
+    <button id="export-weather" class="btn btn-outline">Export weather</button>
+
+    <div class="card">
+        <h2 id="city-country"></h2>
+        <div class="icon-temp">
+            <img src="" alt="weather icon" id="icon" />
+            <h3 id="temperature"></h3>
+        </div>
+    </div>
+    <hr />
+    <div id="export-output" class="card"></div>
+</main>
+</html>

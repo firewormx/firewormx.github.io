@@ -115,7 +115,7 @@ justify-content: center;
   padding-bottom: 50px;
   display: grid; 
   grid-template-columns:repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(8, minmax(0, 1fr));
+  grid-template-rows: repeat(10, minmax(0, 1fr));
 place-items: center;
   gap: 20px;
 }

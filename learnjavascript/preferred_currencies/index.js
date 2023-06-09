@@ -7,3 +7,12 @@ document.querySelectorAll(".cards .card")
         console.log(getSelectedCurrencies());
     });
 })
+
+const cards_m= document.querySelectorAll(".cards_m .card_m");
+cards_m.forEach(card_m =>{
+     card_m.addEventListener("click", event=>{
+        document.querySelector(".cards_m .card_m.active")?.classList.remove("active");
+        event.currentTarget.classList.add("active");
+     })
+})
+

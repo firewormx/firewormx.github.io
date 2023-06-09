@@ -255,13 +255,15 @@
     display: none;
   }
   
-  .cards {
+  .cards,
+  .cards_m {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
   
-  .card {
+  .card,
+  .card_m {
     background-color: #ccc;
     border-radius: 3px;
     font-size: 20px;
@@ -276,7 +278,8 @@
     opacity: 1;
   }
   
-  .card.active {
+  .card.active,
+  .card_m.active {
     background-color: var(--accent-1);
     color: white;
     font-weight: bold;

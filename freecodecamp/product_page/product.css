@@ -51,12 +51,14 @@
     #email{
       width: 35%;
       height: 5%;
+      padding: 10px;
       border-radius: 4px;
     }
     #submit{
-      width: 25%;
-      height: 5%;
+      width: 15%;
+      height: 35%;
       margin-block: 15px;
+      padding: 10px;
       background-color: #75E6DA;
       border-radius: 12px;
       border: none;
@@ -72,7 +74,7 @@
         translate: 1px 1px;
     }
     #features{
-      margin-block: 20px;
+      margin-block: 10px;
       width: 100%;
       padding-left: 15%;
     
@@ -89,6 +91,10 @@
     .desc p{
     margin: 0;
     padding: 0;
+    }
+    #how-it-works{
+      margin-top: 60px;
+      margin-bottom: 60px;
     }
     #how-it-works iframe {
     

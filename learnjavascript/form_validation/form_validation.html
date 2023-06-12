@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="form_validation.css">
+    <script type="module" crossorigin src="form_validation.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+      <a href="#" class="nav-brand">Form validation</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">About us</a></li>
+        <li><a href="" class="nav-item btn btn-default">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+        <h1>Welcome to our app</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+            voluptatem.
+        </p>
+        <form id="user-form" novalidate>
+            <label for="user-name">User Name<span style="color: red"><small>(*More than 6 characters are valid)</small></span></label>
+            <input id="user-name" type="text" placeholder="Enter your username">
+        </form>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" target="_blank">About us</a>
+        <a href="contact.html" target="_blank">Contact us</a>
+    </footer>
+</body>
+</html>

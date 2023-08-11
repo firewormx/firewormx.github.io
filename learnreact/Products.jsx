@@ -6,7 +6,7 @@ import Loader from "./Loader.jsx";
 export default function Products(props) {
   const [products, setProducts] = useState([]);
   const { get, loading } = useFetch(
-    "https://react-tutorial-demo.firebaseio.com/"
+    "https://firewormx.github.io/learnreact/"
   );
 
   useEffect(() => {

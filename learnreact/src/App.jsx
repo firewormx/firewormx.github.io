@@ -66,10 +66,10 @@ function App() {
       <Navbar cart={cart} />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/learnreact" element={<Home />}></Route>
+          <Route path="/learnreact/about" element={<About />}></Route>
           <Route
-            path="/products"
+            path="/learnreact/products"
             element={
               <Products
                 cart={cart}
@@ -79,7 +79,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/products"
+            path="/learnreact/products"
             element={
               <Products
                 cart={cart}
@@ -89,7 +89,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/products/:id/"
+            path="/learnreact/products/:id/"
             element={<ProductDetails onProductAdd={handleProductAdd} />}
           >
             <Route
@@ -104,7 +104,7 @@ function App() {
 
             <Route path="storage" element={<ProductDetailStorage />}></Route>
           </Route>
-          <Route path="/cart" element={<Cart cart={cart} />}></Route>
+          <Route path="/learnreact/cart" element={<Cart cart={cart} />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

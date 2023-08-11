@@ -8,14 +8,14 @@ export default function Navbar(props) {
 
   return (
     <nav className="navbar">
-      <NavLink to="/" className="nav-brand">
+      <NavLink to="/learnreact" className="nav-brand">
         SuperM
       </NavLink>
       <ul>
         <li className="nav-item">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/"
+            to="/learnreact"
           >
             Home
           </NavLink>
@@ -23,7 +23,7 @@ export default function Navbar(props) {
         <li className="nav-item">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/about"
+            to="/learnreact/about"
           >
             About us
           </NavLink>
@@ -31,13 +31,13 @@ export default function Navbar(props) {
         <li className="nav-item">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/products"
+            to="/learnreact/products"
           >
             Products
           </NavLink>
         </li>
         <li>
-          <NavLink to="/cart" className="nav-item nav-cart btn btn-accent">
+          <NavLink to="/learnreact/cart" className="nav-item nav-cart btn btn-accent">
             Cart ({cartCount})
           </NavLink>
         </li>

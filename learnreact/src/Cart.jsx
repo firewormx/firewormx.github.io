@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import Input from "./Input.jsx";
-import Button from "./Button.jsx";
+import Input from "./Input";
+import Button from "./Button";
 
 // TODO: Replace with your own publishable key
 const stripeLoadedPromise = loadStripe("pk_test_51LZoa2G2OcQ6MudBR4BdxG6ZWJ913KuFDFR1wO7zXUJ2U5BDksSZUfrvruNXsz8m07UImZ1uhWAYpmigtz0Tuvzq00Kod8O22n");
@@ -97,7 +97,7 @@ export default function Cart({ cart }) {
                 Enter your email and then click on pay and your products will be
                 delivered to you on the same day!
                 <br />
-  
+             
               </p>
               <Input
                 placeholder="Email"

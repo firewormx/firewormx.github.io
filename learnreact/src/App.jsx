@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar.jsx";
-import Home from "./Home.jsx";
-import About from "./About.jsxt";
-import Products from "./Products.jsx";
-import ProductDetails from "./ProductDetails.jsx";
-import ProductDetailInfo from "./ProductDetailInfo.jsx";
-import ProductDetailNutrition from "./ProductDetailNutrition.jsx";
-import ProductDetailStorage from "./ProductDetailStorage.jsx";
-import Cart from "./Cart.jsx";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import About from "./About";
+import Products from "./Products";
+import ProductDetails from "./ProductDetails";
+import ProductDetailInfo from "./ProductDetailInfo";
+import ProductDetailNutrition from "./ProductDetailNutrition";
+import ProductDetailStorage from "./ProductDetailStorage";
+import Cart from "./Cart";
 
 function App() {
   const [cart, setCart] = useState(function () {

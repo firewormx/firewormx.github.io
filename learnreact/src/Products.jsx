@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Product from "./Product.jsx";
-import useFetch from "./useFetch.js";
-import Loader from "./Loader.jsx";
+import Product from "./Product";
+import useFetch from "./useFetch";
+import Loader from "./Loader";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);

@@ -1,10 +1,10 @@
 {
-  "description": "200g cheese block",
-  "id": 1,
-  "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/cheese.png",
-  "name": "Cheese",
-  "nutrition": { "carbs": 1.3, "fat": 33, "protein": 25, "salt": 1 },
-  "price": 350,
-  "price_id": "price_1NdjupG2OcQ6MudBdZKKQHWX",
-  "storage": "Store in a cool place (between 5°C and 15°C)"
-}
+    "description": "200g cheese block",
+    "id": 1,
+    "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/cheese.png",
+    "name": "Cheese",
+    "nutrition": { "carbs": 1.3, "fat": 33, "protein": 25, "salt": 1 },
+    "price": 350,
+    "price_id": "price_1NdjupG2OcQ6MudBdZKKQHWX",
+    "storage": "Store in a cool place (between 5°C and 15°C)"
+  }

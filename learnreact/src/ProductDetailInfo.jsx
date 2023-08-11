@@ -1,5 +1,5 @@
 import { useOutletContext } from "react-router-dom";
-import Button from "./Button.jsx";
+import Button from "./Button";
 
 export default function ProductDetailInfo({ onProductAdd }) {
   const product = useOutletContext();

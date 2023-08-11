@@ -1,34 +1,34 @@
 [
-  {
-    "description": "200g cheese block",
-    "id": 1,
-    "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/cheese.png",
-    "name": "Cheese",
-    "price": 350,
-    "price_id": "price_1NdjupG2OcQ6MudBdZKKQHWX"
-  },
-  {
-    "description": "200ml milk bottle",
-    "id": 2,
-    "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/milk.png",
-    "name": "Milk",
-    "price": 250,
-    "price_id": "price_1LZosXG2OcQ6MudBx4ahzPlg"
-  },
-  {
-    "description": "1 piece of tomato",
-    "id": 3,
-    "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/tomato.png",
-    "name": "Tomato",
-    "price": 130,
-    "price_id": "price_1NdjqHG2OcQ6MudBEreW5rev"
-  },
-  {
-    "description": "500g pineapple",
-    "id": 4,
-    "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/pineapple.png",
-    "name": "Pineapple",
-    "price": 280,
-    "price_id": "price_1NcMdUG2OcQ6MudBiWSowld8"
-  }
-]
+    {
+      "description": "200g cheese block",
+      "id": 1,
+      "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/cheese.png",
+      "name": "Cheese",
+      "price": 350,
+      "price_id": "price_1NdjupG2OcQ6MudBdZKKQHWX"
+    },
+    {
+      "description": "200ml milk bottle",
+      "id": 2,
+      "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/milk.png",
+      "name": "Milk",
+      "price": 250,
+      "price_id": "price_1LZosXG2OcQ6MudBx4ahzPlg"
+    },
+    {
+      "description": "1 piece of tomato",
+      "id": 3,
+      "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/tomato.png",
+      "name": "Tomato",
+      "price": 130,
+      "price_id": "price_1NdjqHG2OcQ6MudBEreW5rev"
+    },
+    {
+      "description": "500g pineapple",
+      "id": 4,
+      "image": "https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/pineapple.png",
+      "name": "Pineapple",
+      "price": 280,
+      "price_id": "price_1NcMdUG2OcQ6MudBiWSowld8"
+    }
+  ]

@@ -27,8 +27,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "https://superm.react-tutorial.app/",
-          cancelUrl: "https://superm.react-tutorial.app/",
+          successUrl: "https://firewormx.github.io/learnreact/index.html",
+          cancelUrl: "https://firewormx.github.io/learnreact/index.html",
           customerEmail: email,
         })
         .then((response) => {

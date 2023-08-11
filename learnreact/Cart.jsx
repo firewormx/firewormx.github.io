@@ -6,6 +6,7 @@ import Button from "./Button.jsx";
 // TODO: Replace with your own publishable key
 const stripeLoadedPromise = loadStripe("pk_test_51LZoa2G2OcQ6MudBR4BdxG6ZWJ913KuFDFR1wO7zXUJ2U5BDksSZUfrvruNXsz8m07UImZ1uhWAYpmigtz0Tuvzq00Kod8O22n");
 
+
 export default function Cart({ cart }) {
   const totalPrice = cart.reduce(
     (total, product) => total + product.price * product.quantity,
@@ -96,10 +97,7 @@ export default function Cart({ cart }) {
                 Enter your email and then click on pay and your products will be
                 delivered to you on the same day!
                 <br />
-                <em>
-                  Enter your own Stripe Publishable Key in Cart.js for the
-                  checkout to work
-                </em>
+  
               </p>
               <Input
                 placeholder="Email"

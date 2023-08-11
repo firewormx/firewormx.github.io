@@ -27,8 +27,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "https://firewormx.github.io/learnreact/index.html",
-          cancelUrl: "https://firewormx.github.io/learnreact/index.html",
+          successUrl: "https://firewormx.github.io/learnreact",
+          cancelUrl: "https://firewormx.github.io/learnreact",
           customerEmail: email,
         })
         .then((response) => {

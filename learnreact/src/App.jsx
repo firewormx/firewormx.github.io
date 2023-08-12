@@ -66,7 +66,7 @@ function App() {
       <Navbar cart={cart} />
       <div className="container">
         <Routes>
-          <Route path="/learnreact" element={<Home />}></Route>
+          <Route path="/learnreact/" element={<Home />}></Route>
           <Route path="/learnreact/about" element={<About />}></Route>
           <Route
             path="/learnreact/products"

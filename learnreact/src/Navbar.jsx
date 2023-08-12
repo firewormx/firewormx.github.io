@@ -8,14 +8,14 @@ export default function Navbar(props) {
 
   return (
     <nav className="navbar">
-      <NavLink to="/learnreact" className="nav-brand">
+      <NavLink to="/learnreact/" className="nav-brand">
         SuperM
       </NavLink>
       <ul>
         <li className="nav-item">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/learnreact"
+            to="/learnreact/"
           >
             Home
           </NavLink>

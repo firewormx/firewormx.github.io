@@ -3,7 +3,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import Input from "./Input";
 import Button from "./Button";
 
-// TODO: Replace with your own publishable key
+// stripe publishable key
 const stripeLoadedPromise = loadStripe("pk_test_51LZoa2G2OcQ6MudBR4BdxG6ZWJ913KuFDFR1wO7zXUJ2U5BDksSZUfrvruNXsz8m07UImZ1uhWAYpmigtz0Tuvzq00Kod8O22n");
 
 

@@ -134,6 +134,7 @@ place-items: center;
   flex-direction: column;
   gap: 0;
   height: 100%;
+  width: 100%;
   text-decoration: none;
   box-shadow: 10px 20px 20px 12px rgba(0 0 0 / 30%);
 }
@@ -242,7 +243,7 @@ display: inline-block;
 }
 
 .border-line{
- width: 100vw;
+ width: auto;
   background-color: var(--river);
   height: 3px;
   border: none;
@@ -276,14 +277,16 @@ color: white;
   padding: 3px;
 }
 .projects-details{
-  grid-template-columns: 1fr;
+grid-template-columns: 1fr;
   gap: 20px;
-  width: 80dvw;
-  height: fit-content;
   place-items: center;
+  margin: 0;
+  padding: 0;
+ 
 }
 .part{
-  width: 80dvw;
+  width: 60dvw;
+  height: 30dvh;
   height: fit-content;
   padding-inline: 0;
 }
@@ -295,6 +298,8 @@ color: white;
 #contact{
   height: auto;
   width: auto;
+  padding-bottom: 30px;
+  padding-top: 0;
 }
 .work-details,
 .footer-details,

@@ -5,7 +5,7 @@
 --green: #D0F0C0;
 --brown: #674846;
 --river: #20B2AA;
---nav-height: 67px;
+--nav-height: 4.19rem;
 }
 body{
   margin: 0;
@@ -105,7 +105,7 @@ justify-content: center;
   margin: 20px auto;
 }
 .line{
-  width: 550px;
+  width: 34.37rem;
   background-color: #674846;
   height: 2px;
 }
@@ -261,9 +261,50 @@ color: white;
 }
 
 @media(max-width: 37.5rem){
-#navbar,
-logo{
+  .nav-details li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    padding: 8px;
+    }
+    #navbar{
+      width: auto;
+    }
+.logo{
   flex-direction: column;
+  gap:5px;
+  padding: 3px;
+}
+.projects-details{
+  grid-template-columns: 1fr;
+  gap: 5px;
+  width: 100dvw;
+  height: auto;
+  place-items: center;
+}
+.part{
+  width: 80dvw;
+  height: auto;
+  padding-inline: 20px;
+}
+#welcome-section{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+#projects,
+#contact{
+  height: auto;
+  width: auto;
+}
+.work-details,
+.footer-details,
+.my-projects-title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100dvw;
 }
 
+
 }
+

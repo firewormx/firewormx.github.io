@@ -33,7 +33,7 @@ right: 0;
   list-style: none;
 }
 li a{
-text-decoration: none;
+text-decoration:none;
 color:white;
 font-size: 1.4rem;
 font-weight: 600;
@@ -71,6 +71,8 @@ flex-direction: column;
 #About h1{
   font-size: 3.5rem;
   margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 #About p{
   font-size: 1.5rem;
@@ -104,7 +106,7 @@ justify-content: center;
   align-items: center;
   margin-block: 3rem;
 }
-.line{
+.intro-line{
   width: 34.37rem;
   background-color: #674846;
   height: 2px;
@@ -262,9 +264,13 @@ color: white;
 }
 
 @media(max-width: 37.5rem){
+  .nav-details{
+    transition: none;
+  }
+  .nav-details li a:hover{
+    background-color: transparent;
+  }
   .nav-details li a{
-    text-decoration: none;
-    color:white;
     font-size: 1rem;
     padding: 8px;
     }
@@ -275,6 +281,21 @@ color: white;
   flex-direction: column;
   gap:5px;
   padding: 3px;
+}
+#about h1{
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.intro-line{
+  width: 80%;
+  background-color: #674846;
+  height: 2px;
+}
+.my-projects-title{
+  font-size: 1.5rem;
+  width: auto;
 }
 .projects-details{
 grid-template-columns: 1fr;
@@ -290,6 +311,20 @@ grid-template-columns: 1fr;
   height: fit-content;
   padding-inline: 0;
 }
+.part a{
+  border-radius: 10%;
+  background-color: var(--river);
+}
+.part img{
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.part h3{
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  background-color: transparent;
+  color: white;
+}
 #welcome-section{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 8fr 1fr;
@@ -297,13 +332,12 @@ grid-template-columns: 1fr;
 #projects,
 #contact{
   height: auto;
-  width: auto;
+  width: 100%;
   padding-bottom: 30px;
   padding-top: 0;
 }
 .work-details,
-.footer-details,
-.my-projects-title{
+.footer-details{
   display: flex;
   flex-direction: column;
   justify-content: center;

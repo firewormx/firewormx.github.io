@@ -264,6 +264,13 @@ color: white;
 }
 
 @media(max-width: 37.5rem){
+  .about-name,
+  .contact-info{
+    font-size: 2rem;
+  }
+  .description{
+    font-size: 1rem;
+  }
   .nav-details{
     transition: none;
   }
@@ -336,6 +343,7 @@ grid-template-columns: 1fr;
   padding-bottom: 30px;
   padding-top: 0;
 }
+
 .work-details,
 .footer-details{
   display: flex;

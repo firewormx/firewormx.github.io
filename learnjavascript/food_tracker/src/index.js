@@ -1,6 +1,6 @@
 import FetchWrapper from "./fetch-wrapper.js";
 import { capitalize, calculateCalories } from "./helpers.js";
-import snackbar from "snackbar";
+import snackbar from "snackbar/dist/snackbar.min.css";
 import AppData from "./app-data.js";
 import "snackbar/dist/snackbar.min.css";
 
@@ -11,7 +11,7 @@ import Chart from "chart.js/auto";
 
 // TODO: If you plan on hosting this, make sure to change the entire URL below to your own Firebase Firestore database
 const API = new FetchWrapper(
-  "https://firestore.googleapis.com/v1/projects/jsdemo-3f387/databases/(default)/documents/YOURNAMESPACEHERE"
+  "https://firestore.googleapis.com/v1/projects/jsdemo-3f387/databases/(default)/documents/firewormx"
 );
 
 const appData = new AppData();

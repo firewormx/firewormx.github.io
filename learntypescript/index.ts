@@ -3,10 +3,10 @@ import { insertBook, setupGenreFilter } from "./helpers";
 import type { Book, NewBook } from "./types";
 
 const API = new FetchWrapper(
-  "https://ts-books-c250e-default-rtdb.firebaseio.com/"
+"https://firewormx.github.io/learntypescript/"
 );
 
-API.get<{ books: Book[] }>("books.json").then((data) => {
+API.get<{ books: Book[] }>("bookLibrary.json").then((data) => {
   if (data.books) {
     data.books.forEach((book) => {
       insertBook(book);

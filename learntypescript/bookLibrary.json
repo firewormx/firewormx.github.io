@@ -1,0 +1,48 @@
+{
+    "books": [
+    {
+    "author": "Eric Carle",
+    "details": {
+    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book1.jpg",
+    "genre": "Children",
+    "publishedYear": 1969,
+    "summary": "A classic children's story about a caterpillar's transformation into a butterfly."
+    },
+    "id": 1,
+    "title": "The Very Hungry Caterpillar"
+    },
+    {
+    "author": "J.D. Salinger",
+    "details":{
+    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book2.jpg",
+    "genre": "Fiction",
+    "publishedYear": 1951,
+    "summary": "A novel about teenage rebellion and alienation, narrated by the iconic Holden Caulfield."
+    },
+    "id": 2,
+    "title": "The Catcher in the Rye"
+    },
+    {
+    "author": "J.K. Rowling",
+    "details": {
+    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book3.jpg",
+    "genre": "Fantasy",
+    "publishedYear": 1997,
+    "summary": "The first book in the Harry Potter series, introducing Harry's adventures at Hogwarts."
+    },
+    "id": 3,
+    "title": "Harry Potter and the Sorcerer's Stone"
+    },
+    {
+    "author": "Yuval Noah Harari",
+    "details": {
+    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book4.jpg",
+    "genre": "Non-Fiction",
+    "publishedYear": 2011,
+    "summary": "An exploration of the history and impact of Homo sapiens from the Stone Age to the modern era."
+    },
+    "id": 4,
+    "title": "Sapiens: A Brief History of Humankind"
+    }
+    ]
+    }

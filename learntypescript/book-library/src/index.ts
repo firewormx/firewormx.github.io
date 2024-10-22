@@ -1,9 +1,10 @@
 import FetchWrapper from "./FetchWrapper";
 import { insertBook, setupGenreFilter } from "./helpers";
 import type { Book, NewBook } from "./types";
+import './index.css'
 
 const API = new FetchWrapper(
-"https://firewormx.github.io/learntypescript/"
+"https://firewormx.github.io/learntypescript/book-library/src/"
 );
 
 API.get<{ books: Book[] }>("bookLibrary.json").then((data) => {

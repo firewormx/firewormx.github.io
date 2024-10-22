@@ -28,7 +28,7 @@ form.addEventListener("submit", (event) => {
     title: title.value,
     author: author.value,
   };
-  API.post<{},NewBook>("request.json", newBook).then(() => {
+  API.post<{},NewBook>("bookLibrary.json", newBook).then(() => {
     message.textContent = "Thank you for suggesting a new book!";
     title.value = "";
     author.value = "";

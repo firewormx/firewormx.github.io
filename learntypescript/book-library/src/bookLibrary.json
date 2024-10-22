@@ -3,7 +3,7 @@
     {
     "author": "Eric Carle",
     "details": {
-    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book1.jpg",
+    "coverImage": "https://firewormx.github.io/learntypescript/book-library/bookImages/book1.jpg",
     "genre": "Children",
     "publishedYear": 1969,
     "summary": "A classic children's story about a caterpillar's transformation into a butterfly."
@@ -14,7 +14,7 @@
     {
     "author": "J.D. Salinger",
     "details":{
-    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book2.jpg",
+    "coverImage": "https://firewormx.github.io/learntypescript/book-library/bookImages/book2.jpg",
     "genre": "Fiction",
     "publishedYear": 1951,
     "summary": "A novel about teenage rebellion and alienation, narrated by the iconic Holden Caulfield."
@@ -25,7 +25,7 @@
     {
     "author": "J.K. Rowling",
     "details": {
-    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book3.jpg",
+    "coverImage": "https://firewormx.github.io/learntypescript/book-library/bookImages/book3.jpg",
     "genre": "Fantasy",
     "publishedYear": 1997,
     "summary": "The first book in the Harry Potter series, introducing Harry's adventures at Hogwarts."
@@ -36,7 +36,7 @@
     {
     "author": "Yuval Noah Harari",
     "details": {
-    "coverImage": "https://firewormx.github.io/learntypescript/bookImages/book4.jpg",
+    "coverImage": "https://firewormx.github.io/learntypescript/book-library/bookImages/book4.jpg",
     "genre": "Non-Fiction",
     "publishedYear": 2011,
     "summary": "An exploration of the history and impact of Homo sapiens from the Stone Age to the modern era."

@@ -10,6 +10,11 @@ citiesDropdown.addEventListener("change", () => {
     .then(data => {
         console.log(data.current.temperature)
         const temperature = data.current.temperature;
-        result.textContent = `It's ${temperature} degrees celsius.`;
+        const description = data.current.weather_descriptions[0];
+        const humidity = data.current.humidity;
+        result.textContent = `It's ${temperature} degrees celsius.
+        The weather is ${description}.
+        The humidity is ${humidity}
+        `;
     });
 });

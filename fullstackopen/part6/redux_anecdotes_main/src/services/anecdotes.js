@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = `https://firewormx.github.io/fullstackopen/part6/redux-anecdotes-main/db.json`
+const baseUrl = "/anecdotes"
 
 const getAll = async() => {
 const response = await axios.get(baseUrl)

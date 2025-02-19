@@ -4,6 +4,7 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
+    "start": "node dist/assets/index.js",
     "server": "json-server -p3001 --watch db.json",
     "dev": "vite",
     "build": "vite build",

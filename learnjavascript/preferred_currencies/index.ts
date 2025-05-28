@@ -1,4 +1,4 @@
-import {getSelectedCurrencies} from "./currency.js";
+import {getSelectedCurrencies} from "./currency.tsx";
 
 const cards = document.querySelectorAll<HTMLButtonElement>(".cards .card");
 cards.forEach(card => {

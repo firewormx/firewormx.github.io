@@ -8,7 +8,7 @@ const category = document.querySelector("#todo-category") as HTMLSelectElement
 const list = document.querySelector("#todo-list") as HTMLUListElement
 const filter = document.querySelector("#todo-filter") as HTMLSelectElement;
 const count = document.querySelector("#todo-count") as HTMLSpanElement;
-const API = new FetchWrapper("https://jsonplaceholder.typicode.com");
+const API = new FetchWrapper("https://localhost:3000");
 
 interface Todo {
     id?: number;
@@ -22,33 +22,26 @@ type TodoList = Todo[];
 const render = (items: TodoList, itemsCount: number): void => {
     count.textContent = `(${itemsCount})`;
     list.innerHTML = items.map((todo: Todo) => `<li>${todo.title} [${todo.category}]</li>`).join("");
-}
+};
 
-interface Data  {
-    todos: [{
-id?: number,
-title: string,
-category: string,
-created_at?: string
-    }]
-}
-const getTodos =  () => {
-    const data = API.get<Data>("/posts").then(data => {
+const getTodos = () => {
+    API.get<Todo[]>("/todos").then(todos => {
         list.innerHTML = "";
-        data.todos.forEach(todo => {
+        todos.forEach(todo => {
             console.log(todo);
-            list.insertAdjacentHTML("beforeend",`<li><div class="card">${todo.title} [${todo.category}]</div></li>`);
-        })
-    })
-    }
+            list.insertAdjacentHTML("beforeend", `<li><div class="card">${todo.title} [${todo.category}]</div></li>`);
+        });
+    });
+};
+
+getTodos(); // Fetch todos on page load
 
 form.addEventListener("submit", event => {
     event.preventDefault();
-   button.setAttribute("disabled", "disabled");
-   API.post("/posts", {
+    button.setAttribute("disabled", "disabled");
+    API.post("/todos", {
         title: title.value,
-        body: category.value, // JSONPlaceholder expects 'body' instead of 'category'
-        userId: 1
+        category: category.value
     }).then(() => {
         button.removeAttribute("disabled");
         title.value = "";
@@ -56,9 +49,9 @@ form.addEventListener("submit", event => {
         getTodos();
     }).catch(() => {
         button.removeAttribute("disabled");
-        console.error("Error adding todo"); 
-})
-})
+        console.error("Error adding todo");
+    });
+});
 
 
 const todos = new Todos();

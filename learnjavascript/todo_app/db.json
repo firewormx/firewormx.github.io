@@ -1,0 +1,7 @@
+{
+  "todos": [
+ { "title": "Learn JavaScript", "category": "work" },
+{ "title": "Meditate", "category": "personal" }
+  ]
+}
+  

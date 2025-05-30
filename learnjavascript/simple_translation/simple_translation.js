@@ -2,7 +2,8 @@ const translations = {
     welcome: {
         dutch: "Welkom",
         french: "Bienvenue",
-        english: "Welcome"
+        english: "Welcome",
+        spanish:"Bienvenido",
     }
 }
 export default translations;

@@ -1,5 +1,5 @@
 import Todos from "./todo_app";
-import FetchWrapper from "./fetch-wrapper";
+import FetchWrapper from "./fetch-wrapper.js";
 const form = document.querySelector("#todo-form");
 const button = document.querySelector("#button-add");
 const title = document.querySelector("#todo-title");

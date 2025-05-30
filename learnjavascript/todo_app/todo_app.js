@@ -1,35 +1,33 @@
-export default class Todos {
-    constructor() {
-        this.todos = [{
-            title: "Learn JavaScript",
-            category: "work"
-        }, {
-            title: "Meditate",
-            category: "personal"
-        }];
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Todos = /** @class */ (function () {
+    function Todos() {
+        this.todos = [
+            { title: "Learn JavaScript", category: "work" },
+            { title: "Meditate", category: "personal" }
+        ];
     }
-
-getAll(){
-    return this.todos;
-}
-getCount(){
-    return this.todos.length;
-}
-add(title,category){
-    return this.todos.push({title, category});
-}
-
-getWork(){
-return this.todos.filter(todo=> todo.category==="work");
-}
-
-getWorkCount(){
-return this.getWork().length;
-}
-getPersonal(){
-    return this.todos.filter(todo=>todo.category==="personal");
-}
-getPersonalCount(){
-    return this.getPersonal().length;
-}
-}
+    Todos.prototype.getAll = function () {
+        return this.todos;
+    };
+    Todos.prototype.getCount = function () {
+        return this.todos.length;
+    };
+    Todos.prototype.add = function (title, category) {
+        this.todos.push({ title: title, category: category });
+    };
+    Todos.prototype.getWork = function () {
+        return this.todos.filter(function (todo) { return todo.category === "work"; });
+    };
+    Todos.prototype.getWorkCount = function () {
+        return this.getWork().length;
+    };
+    Todos.prototype.getPersonal = function () {
+        return this.todos.filter(function (todo) { return todo.category === "personal"; });
+    };
+    Todos.prototype.getPersonalCount = function () {
+        return this.getPersonal().length;
+    };
+    return Todos;
+}());
+exports.default = Todos;

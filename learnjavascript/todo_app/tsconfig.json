@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "module": "esnext", // or "es6"
+    "target": "es6",
+    "allowJs": true,
+  }
+}

@@ -1,5 +1,5 @@
-import Todos from "./todo_app";
-import FetchWrapper from "./fetch-wrapper";
+import Todos from "./todo_app.js";
+import FetchWrapper from "./fetch-wrapper.js";
 
 const form = document.querySelector("#todo-form") as HTMLFormElement;
 const button = document.querySelector("#button-add") as HTMLButtonElement;
@@ -8,7 +8,7 @@ const category = document.querySelector("#todo-category") as HTMLSelectElement
 const list = document.querySelector("#todo-list") as HTMLUListElement
 const filter = document.querySelector("#todo-filter") as HTMLSelectElement;
 const count = document.querySelector("#todo-count") as HTMLSpanElement;
-const API = new FetchWrapper("https://api.learnjavascript.online/demo");
+const API = new FetchWrapper("https://jsonplaceholder.typicode.com");
 
 interface Todo {
     id?: number;
@@ -33,7 +33,7 @@ created_at?: string
     }]
 }
 const getTodos =  () => {
-    const data = API.get<Data>("/todos").then(data => {
+    const data = API.get<Data>("/posts").then(data => {
         list.innerHTML = "";
         data.todos.forEach(todo => {
             console.log(todo);
@@ -45,9 +45,10 @@ const getTodos =  () => {
 form.addEventListener("submit", event => {
     event.preventDefault();
    button.setAttribute("disabled", "disabled");
-   API.post("/todos", {
+   API.post("/posts", {
         title: title.value,
-        category: category.value
+        body: category.value, // JSONPlaceholder expects 'body' instead of 'category'
+        userId: 1
     }).then(() => {
         button.removeAttribute("disabled");
         title.value = "";

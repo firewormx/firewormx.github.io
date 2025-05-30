@@ -1,4 +1,4 @@
-import Todos from "./todo_app";
+import Todos from "./todo_app.js";
 import FetchWrapper from "./fetch-wrapper.js";
 const form = document.querySelector("#todo-form");
 const button = document.querySelector("#button-add");

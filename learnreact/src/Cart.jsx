@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
 import Input from "./Input";
 import Button from "./Button";
@@ -7,7 +8,7 @@ import Button from "./Button";
 const stripeLoadedPromise = loadStripe("pk_test_51LZoa2G2OcQ6MudBR4BdxG6ZWJ913KuFDFR1wO7zXUJ2U5BDksSZUfrvruNXsz8m07UImZ1uhWAYpmigtz0Tuvzq00Kod8O22n");
 
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, onProductAdd, onProductDelete }) {
   const totalPrice = cart.reduce(
     (total, product) => total + product.price * product.quantity,
     0
@@ -47,7 +48,12 @@ export default function Cart({ cart }) {
       <div>
         <h1>Your Cart</h1>
         {cart.length === 0 && (
-          <p>You have not added any product to your cart yet.</p>
+          <div style={{ textAlign: "center", padding: "40px 0" }}>
+            <p>You have not added any product to your cart yet.</p>
+            <Link to="/learnreact/products" className="btn btn-default">
+              Start shopping
+            </Link>
+          </div>
         )}
         {cart.length > 0 && (
           <>
@@ -58,7 +64,7 @@ export default function Cart({ cart }) {
                     Product
                   </th>
                   <th width="20%">Unit price</th>
-                  <th width="10%">Quanity</th>
+                  <th width="20%">Quantity</th>
                   <th width="25%">Total</th>
                 </tr>
               </thead>
@@ -76,7 +82,13 @@ export default function Cart({ cart }) {
                         {product.name}
                       </td>
                       <td>${product.price}</td>
-                      <td>{product.quantity}</td>
+                      <td>
+                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                          <Button outline onClick={() => onProductDelete(product.id)} style={{ padding: "4px 10px" }}>−</Button>
+                          <span>{product.quantity}</span>
+                          <Button outline onClick={() => onProductAdd(product)} style={{ padding: "4px 10px" }}>+</Button>
+                        </div>
+                      </td>
                       <td>
                         <strong>${product.price * product.quantity}</strong>
                       </td>

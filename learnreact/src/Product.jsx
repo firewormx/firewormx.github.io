@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { notifications } from "@mantine/notifications";
 import Button from "./Button";
 
 export default function Product(props) {
@@ -8,6 +9,16 @@ export default function Product(props) {
     (product) => product.id === details.id
   );
   const quantity = productFromCart ? productFromCart.quantity : 0;
+
+  function handleAdd() {
+    props.onProductAdd(details);
+    notifications.show({
+      title: "Added to cart",
+      message: `${details.name} has been added to your cart`,
+      color: "teal",
+      autoClose: 2000,
+    });
+  }
 
   return (
     <div className="product">
@@ -43,7 +54,7 @@ export default function Product(props) {
             </Button>
           )}
         </div>
-        <Button outline onClick={() => props.onProductAdd(details)}>
+        <Button outline onClick={handleAdd}>
           ${details.price}
         </Button>
       </div>

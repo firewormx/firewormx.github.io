@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Badge } from "@mantine/core";
 
 export default function Navbar(props) {
   const cartCount = props.cart.reduce(
@@ -36,10 +37,19 @@ export default function Navbar(props) {
             Products
           </NavLink>
         </li>
-        <li>
+        <li style={{ position: "relative", display: "inline-flex", alignItems: "center" }}>
           <NavLink to="/learnreact/cart" className="nav-item nav-cart btn btn-accent">
-            Cart ({cartCount})
+            Cart
           </NavLink>
+          {cartCount > 0 && (
+            <Badge
+              size="sm"
+              color="red"
+              style={{ position: "absolute", top: -6, right: -10 }}
+            >
+              {cartCount}
+            </Badge>
+          )}
         </li>
       </ul>
     </nav>

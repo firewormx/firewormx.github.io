@@ -79,16 +79,6 @@ function App() {
             }
           ></Route>
           <Route
-            path="/learnreact/products"
-            element={
-              <Products
-                cart={cart}
-                onProductAdd={handleProductAdd}
-                onProductDelete={handleProductDelete}
-              />
-            }
-          ></Route>
-          <Route
             path="/learnreact/products/:id/"
             element={<ProductDetails onProductAdd={handleProductAdd} />}
           >
@@ -104,7 +94,7 @@ function App() {
 
             <Route path="storage" element={<ProductDetailStorage />}></Route>
           </Route>
-          <Route path="/learnreact/cart" element={<Cart cart={cart} />}></Route>
+          <Route path="/learnreact/cart" element={<Cart cart={cart} onProductAdd={handleProductAdd} onProductDelete={handleProductDelete} />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
